@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this project code or the associated study results, please cite it as below."
+authors:
+  - family-names: "Chakma"
+    given-names: "Vaskar"
+    orcid: "https://orcid.org"
+    affiliation: "Chung-Ang University"
+  - family-names: "Choi"
+    given-names: "Wooyeol"
+    orcid: "https://orcid.org"
+    affiliation: "Chung-Ang University"
+title: "Which Satellite to Refresh Next? Look-Ahead Scheduling of Orbit Data for Timing Advance in LEO Networks"
+version: "1.0.0"
+date-released: 2026-10-14
+url: "https://github.com/VaskarChakma/ntn_refresh"
