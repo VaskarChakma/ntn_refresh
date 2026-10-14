@@ -1,0 +1,4 @@
+input,file_or_reference,source
+Starlink TLEs 2022-07-05..19,data\starlink_tle_2022-07-05_to_19.csv.gz,"space-track.org (18 SPCS), redistributed in github.com/self-driving-satellite-network/starlink-autonomous-driving"
+NR numerology,TS 38.211 cl. 4.1 / 5.3.1,Tc = 1/(480e3*4096); kappa = 64; normal CP = 144*kappa*2^-mu*Tc
+PRACH CP lengths,TS 38.211 Table 6.3.3.1-1/-2 (as implemented in srsRAN_Project lib/ran/prach/prach_preamble_information.cpp),format 0: 3168k; A1: 288k*2^-mu; A3: 864k*2^-mu; C2: 2048k*2^-mu

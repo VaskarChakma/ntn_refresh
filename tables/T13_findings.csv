@@ -1,0 +1,10 @@
+id,statement,evidence,verdict
+P1,Per-satellite maneuver propensity persists week to week,"Spearman rho=0.348, p=2.2e-32",SUPPORTED
+C1,Online refitting reduces calibration drift on later test days,max gap 0.172 -> 0.089,SUPPORTED
+A1,Proposed beats the strongest baseline on test (Visibility x Age) at K=1,"rel. reduction -2.2%; daily gain -0.0154 [95% CI -0.0329,-0.0017], better on 1/6 days",NOT SUPPORTED
+A2,Proposed beats the strongest baseline on test (Visibility x Age-gain) at K=2,"rel. reduction -2.0%; daily gain -0.0085 [95% CI -0.0313,0.0142], better on 3/6 days",NOT SUPPORTED
+A3,Proposed beats the strongest baseline on test (Visibility x Age-gain) at K=3,"rel. reduction -0.5%; daily gain -0.0002 [95% CI -0.0183,0.0160], better on 3/6 days",NOT SUPPORTED
+A5,Proposed beats the strongest baseline on test (Visibility x Age-gain) at K=5,"rel. reduction 3.4%; daily gain 0.0060 [95% CI -0.0019,0.0150], better on 4/6 days",NOT SUPPORTED
+A8,Proposed beats the strongest baseline on test (Visibility x Age-gain) at K=8,"rel. reduction 11.9%; daily gain 0.0084 [95% CI 0.0044,0.0127], better on 6/6 days",SUPPORTED
+A12,Proposed beats the strongest baseline on test (Visibility x Age-gain) at K=12,"rel. reduction 10.6%; daily gain 0.0043 [95% CI 0.0008,0.0090], better on 5/6 days",SUPPORTED
+S1,Proposed is best at K=5 for every timing tolerance,data CP 15 kHz: 0.7%; format 0: 34.8%; A1 (15 kHz): 0.4%; A3 (15 kHz): 3.4%; C2 (15 kHz): 23.8%,SUPPORTED

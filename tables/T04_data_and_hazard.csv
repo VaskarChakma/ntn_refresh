@@ -1,0 +1,7 @@
+quantity,value
+satellites,1087.0
+maneuvers train,480.0
+maneuvers test,343.0
+rate /sat/day (train),0.06308319065592899
+"Spearman(train,test)",0.3484436180444241
+p-value,2.199881801465489e-32

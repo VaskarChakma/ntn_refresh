@@ -1,0 +1,16 @@
+check,result,detail
+CP(mu=0) = 4.6875 us,PASS,4.6875 us
+PRACH format-0 CP = 103.125 us,PASS,103.1250 us
+GMST at J2000.0,PASS,280.46061838 deg
+Zenith geometry,PASS,"el=90.000000, range=550.000000"
+Split ordered: begin < val < split < end,PASS,2459766.167 < 2459769.667 < 2459773.167 < 2459780.118
+Mean satellites visible from Seoul plausible (5-40),PASS,7.3
+Evaluation subset >= 20% of visible minutes,PASS,38.0%
+Truth never usable as a copy (truth epoch > minute),PASS,
+Visibility predicted from 24-h-old data matches (Jaccard >= 0.95),PASS,Jaccard 0.9877
+Primary tolerance not floor-limited (fresh-copy violation < 5%),PASS,1.52% at A3 (15 kHz)
+Cost model calibrated out-of-sample within 0.10 (static fit),FAIL,max gap 0.172
+Maneuver never lowers risk,PASS,0.038->0.145 / 0.106->0.145 / 0.236->0.363 / 0.579->0.733 / 0.660->0.844
+Whittle index non-decreasing in age (indexability),PASS,
+Budget respected by all test runs,PASS,
+"All policies within [refresh-all - 0.002, never-refresh]",PASS,bounds 0.0333 / 0.8309
