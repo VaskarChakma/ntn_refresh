@@ -7,7 +7,7 @@ In 5G NTN, every UE computes its uplink timing advance from the satellite epheme
 This repository contains the full experiment behind our ICOIN 2027 paper. A scheduler learns how quickly timing error grows with data age, predicts which satellites are about to pass over the service area, and plans its refreshes with an exact Hungarian assignment that is re-solved every slot.
 
 <p align="center">
-  <img src="figures/F10_test_violation_vs_K.png" width="520" alt="Test-week violation rate versus refresh budget K">
+  <img src="figures/fig_system_model.jpg" width="520" alt="System Model">
 </p>
 
 ## Key results
@@ -16,11 +16,11 @@ Real Starlink TLEs, 1,087 satellites over Seoul, PRACH format A3 tolerance (28.1
 
 | Budget *K* (per 10 min) | Best baseline | Proposed | Gain |
 |:---:|:---:|:---:|:---:|
-| 5  | 0.170 | 0.165 | +3.4% |
-| 8  | 0.071 | 0.063 | **+11.9%** (6/6 days) |
-| 12 | 0.041 | 0.037 | **+10.6%** (5/6 days) |
+| 5  | 0.170 | 0.164 | +3.6% |
+| 8  | 0.071 | 0.064 | **+10.6%** (6/6 days) |
+| 12 | 0.041 | 0.036 | **+12.1%** (5/6 days) |
 
-- Under looser preamble formats, the gain reaches **23.8%** (C2) and **34.8%** (format 0).
+- Under looser preamble formats, the gain reaches **20.1%** (C2) and **32.3%** (format 0).
 - With 1 to 3 refreshes per slot, visibility-weighted heuristics perform about as well as the scheduler. We report this regime openly.
 
 ## Quick start
@@ -43,7 +43,6 @@ Everything is self-contained: no downloads and no API keys. Figures go to `figur
 | 8 | The scheduler and six baselines, including a Whittle-AoI index |
 | 9 | Design selection on the **validation** window only |
 | 10–12 | One-time **test** run, significance tests, ablations and tolerance sweep |
-| 13 | Summary of 15 validity checks and all findings |
 
 ## Repository layout
 
@@ -72,8 +71,7 @@ Starlink TLEs from space-track.org (18th Space Defense Squadron), redistributed 
 
 ```bibtex
 @inproceedings{chakma2027refresh,
-  title     = {Which Satellite to Refresh Next? Look-Ahead Scheduling of Orbit Data
-               for Timing Advance in LEO Networks},
+  title     = {Which Satellite to Refresh Next? Look-Ahead Scheduling of Orbit Data for Timing Advance in LEO Networks},
   author    = {Chakma, Vaskar and Choi, Wooyeol},
   booktitle = {Proc. International Conference on Information Networking (ICOIN)},
   year      = {2027}
